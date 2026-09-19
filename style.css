@@ -1,4 +1,3 @@
-/* ===== BASIC RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -6,203 +5,213 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333;
-    line-height: 1.6;
+    font-family: 'Times New Roman', Georgia, serif;
+    background-color: #1cccdd;
+    color: #0b0b0b;
+    line-height: 1.7;
 }
 
-/* ===== NAVBAR ===== */
-.navbar {
-    background-color: #333;
-    color: white;
-    padding: 15px 10%;
+.topbar {
+    background-color: #0b3d3f;
+    padding: 12px 8%;
+}
+
+.back {
+    color: #a7f3f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+.header {
+    text-align: center;
+    padding: 45px 10% 25px;
+    border-bottom: 2px solid #0b3d3f;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 34px;
+    color: #0b3d3f;
+    margin-bottom: 15px;
+}
+
+.menu {
+    font-size: 18px;
+}
+
+.menu a {
+    color: #0a363a;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+.menu a:hover {
+    color: #c41717;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #e6f9fb;
+    border: 2px solid #0b3d3f;
+    border-radius: 10px;
+    padding: 28px 32px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    font-size: 24px;
+    color: #c41717;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #0b3d3f;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #0b3d3f;
+    margin: 18px 0 10px;
+}
+
+.profile-row {
     display: flex;
-    justify-content: space-between;
+    gap: 25px;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.navbar h2 {
-    font-size: 22px;
-}
-
-.navbar ul {
-    list-style: none;
+.photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #0b3d3f;
+    color: #a7f3f0;
     display: flex;
-    gap: 20px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    color: #ffcc00;
-}
-
-/* ===== HOME ===== */
-.home {
-    text-align: center;
-    padding: 80px 10%;
-    background-color: #f4f4f4;
-}
-
-.home h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
-    color: #222;
-}
-
-.home p {
-    font-size: 18px;
-    margin-bottom: 25px;
-    color: #555;
-}
-
-.button {
-    display: inline-block;
-    background-color: #0066cc;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.button:hover {
-    background-color: #004c99;
-}
-
-/* ===== ABOUT ===== */
-.about {
-    text-align: center;
-    padding: 60px 10%;
-}
-
-.about h2 {
-    margin-bottom: 15px;
-    color: #222;
-}
-
-.about p {
-    max-width: 700px;
-    margin: 0 auto;
-    color: #555;
-}
-
-/* ===== SKILLS ===== */
-.skills {
-    background-color: #f4f4f4;
-    padding: 60px 10%;
-    text-align: center;
-}
-
-.skills h2 {
-    margin-bottom: 25px;
-    color: #222;
-}
-
-.skill-list {
-    display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    flex-shrink: 0;
 }
 
-.skill {
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 15px 25px;
-    border-radius: 5px;
-    min-width: 120px;
+.details p {
+    margin-bottom: 6px;
+    font-size: 16px;
 }
 
-.skill:hover {
-    background-color: #0066cc;
-    color: white;
+.details strong, .details b {
+    color: #00a708;
 }
 
-/* ===== ACTIVITIES ===== */
-.activities {
-    padding: 60px 10%;
+hr {
+    border: none;
+    border-top: 1px solid #9bc5c9;
+    margin: 18px 0;
 }
 
-.activities h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #222;
-}
-
-.activity-box {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-}
-
-.activity-box h3 {
-    color: #0066cc;
-    margin-bottom: 8px;
-}
-
-.activity-box p {
-    color: #555;
-    margin-bottom: 12px;
-}
-
-.activity-box a {
-    display: inline-block;
-    background-color: #0066cc;
-    color: white;
-    padding: 8px 18px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.activity-box a:hover {
-    background-color: #004c99;
-}
-
-/* ===== CONTACT ===== */
-.contact {
-    text-align: center;
-    padding: 60px 10%;
-    background-color: #f4f4f4;
-}
-
-.contact h2 {
+ul, ol {
+    margin-left: 30px;
     margin-bottom: 15px;
-    color: #222;
 }
 
-.contact p {
-    color: #555;
+li {
+    margin-bottom: 5px;
 }
 
-/* ===== FOOTER ===== */
-.footer {
-    background-color: #333;
+dl {
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+dt {
+    font-weight: bold;
+    color: #c41717;
+    margin-top: 8px;
+}
+
+dd {
+    margin-left: 25px;
+}
+
+.marquee-text {
+    display: block;
+    background-color: #0b3d3f;
+    color: #ffcc00;
+    padding: 8px;
+    font-weight: bold;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.login-box {
+    background-color: #c9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.login-box input {
+    display: block;
+    width: 100%;
+    padding: 9px 12px;
+    margin-bottom: 10px;
+    border: 1px solid #0b3d3f;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.login-box button {
+    padding: 10px 25px;
+    background-color: #0b3d3f;
     color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-box button:hover {
+    background-color: #0a363a;
+}
+
+#msg {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #0b3d3f;
+    color: #a7f3f0;
     text-align: center;
     padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 24px;
     }
 
-    .navbar ul {
-        flex-wrap: wrap;
+    .card {
+        padding: 20px;
+    }
+
+    .profile-row {
         justify-content: center;
-    }
-
-    .home h1 {
-        font-size: 30px;
+        text-align: center;
     }
 }
